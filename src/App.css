@@ -1,0 +1,526 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  background-color: black;
+
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: var(--primary);
+  padding: 0;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+.nav-links a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #FF8660;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 550px;
+  margin: 8rem auto 3rem auto;
+}
+
+.hero-content img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.title {
+  background: linear-gradient(90deg, #FF8660, #9A33FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.name {
+  background: linear-gradient(90deg, #ff6a00, #ffd800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.short-summary {
+  font-size: 1.1rem;
+  color: #D9D9D9;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 1rem auto;
+}
+
+.get-in-touch {
+  font-size: 1.5rem;
+  padding: 0 36px;
+  height: 64px;
+  border-radius: 32px;
+  background: #fff;
+  color: #161513;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.get-in-touch:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.download-cv {
+  font-size: 1.5rem;
+  padding: 0 36px;
+  height: 64px;
+  border-radius: 32px;
+  background: #181716;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #fff;
+  cursor: pointer;
+  background-clip: padding-box;
+  transition: box-shadow 0.2s, border-color 0.2s;
+
+
+}
+
+.experience-skills {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem auto;
+  gap: 2rem;
+}
+
+.experience-text {
+  font-size: 1.5rem;
+  color: #C5C5C5;
+}
+
+.skill-logos {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.skill-logos img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 900px;
+
+
+}
+
+.project-headline {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #FF8660 0%, #FF5C28 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.experience-headline {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #3A8DFF 0%, #1976ED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0 0 3rem 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.job-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.job-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  object-fit: contain;
+  margin-right: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-details {
+  flex-grow: 1;
+  color: white;
+}
+
+.details-section {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.job-details h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+}
+
+.job-dates {
+  font-size: 0.9rem;
+  color: #8491A0;
+}
+
+.job-details p {
+  margin-top: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #8491A0;
+}
+
+.contact-section {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin-left: 63px;
+  padding-bottom: 3rem;
+}
+
+.contact-headline {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.contact-summary {
+  font-size: 1rem;
+  color: #8491A0;
+  margin: 2rem auto;
+}
+
+.email-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-section img {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.email {
+  font-size: 1rem;
+  color: #8491A0;
+
+}
+
+.phone-section {
+  display: flex;
+  gap: 0.5rem;
+
+}
+
+.phone-section img {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.phone {
+  font-size: 1rem;
+  color: #8491A0;
+}
+
+.social-sections {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+/* add responsiveness*/
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #181716;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+
+  .hero {
+    max-width: 95vw;
+    padding: 0 1rem;
+    /* margin: 6rem auto 2rem auto; */
+  }
+
+  /* .hero-content img{
+    width: 120px;
+    height: 120px;
+  } */
+  .title {
+    font-size: 2rem;
+  }
+
+  .quick-links {
+    flex-direction: column;
+    grid-area: 16px;
+    width: 100%;
+  }
+
+  /* .get-in-touch,
+   .download-cv{
+    width: 100%;
+    font-size: 1.1rem;
+    height: 48px;
+    padding: 0 12px;
+   } */
+  .experience-skills {
+    gap: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .skill-logos {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-logos img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .projects-container {
+    max-width: 98vw;
+    padding: 0 1rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    grid-area: 1.5rem;
+    align-items: center;
+  }
+
+  .project-headline {
+    font-size: 2rem;
+    padding: 0.5rem auto;
+  }
+
+  /* .main-container{
+    width: 95vw;
+    min-width: unset;
+    max-width: 400px;
+    margin: 1rem auto;
+   } */
+  .email-section {
+    padding: 0 1rem;
+    max-width: 98vw;
+    margin: 1.5rem auto;
+    align-items: center;
+  }
+
+  .experience-headline {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .job-list {
+    max-width: 98vw;
+    padding: 0 0.5rem;
+  }
+
+  /* .job-item{
+    flex-direction: column;
+    align-items: center;
+  } */
+  .company-logo {
+    margin-bottom: 0.5rem;
+    /* margin-right: 0; */
+  }
+
+  .job-details h2 {
+    font-size: 1.1rem;
+  }
+
+  .job-details p,
+  .job-dates {
+   font-size: 0.9rem;
+  }
+  .contact-section{
+    padding: 1.5rem 0.5rem;
+    width: 100vw;
+    min-width: 0;
+    align-items: flex-start;
+  }
+  .contact-content{
+    margin-left: 0;
+    max-width: 98vw;
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
+  .contact-headline{
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .contact-summary{
+    font-size: 0.9rem;
+    margin: 1.2rem 0;
+  }
+  .email-section,.phone-section{
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+  }
+  .email-section img,
+  .phone-section img {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+  }
+  .social-sections {
+    flex-direction: row;
+    gap: 0.7rem;
+    margin-top: 1.2rem;
+    justify-content: flex-start;
+  }
+}
