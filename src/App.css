@@ -105,7 +105,7 @@ body {
 
 .short-summary {
   font-size: 1.1rem;
-  color: #D9D9D9;
+  color: var(--secondary-text);
 }
 
 .quick-links {
@@ -280,7 +280,7 @@ body {
   margin-top: 5px;
   font-size: 1rem;
   line-height: 1.5;
-  color: #8491A0;
+  color: var(--secondary-text);
 }
 
 .contact-section {
@@ -326,7 +326,7 @@ body {
 
 .email {
   font-size: 1rem;
-  color: #8491A0;
+  color: var(--secondary-text);
 
 }
 
@@ -347,7 +347,7 @@ body {
 
 .phone {
   font-size: 1rem;
-  color: #8491A0;
+  color: var(--secondary-text);
 }
 
 .social-sections {

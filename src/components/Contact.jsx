@@ -30,7 +30,7 @@ export default function Contact() {
           </a>
 
           <a href="https://github.com/Sampath-Sy" target="_blank">
-            <FaGithub size={32}  color="#181717"/>
+            <FaGithub size={32}  color="#FEFEFE"/>
           </a>
 
           <a href="https://www.instagram.com/sampath_sy" target="_blank">

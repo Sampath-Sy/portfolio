@@ -30,7 +30,7 @@
 
 .description {
     font-size: 1rem;
-    color: #8491A0;
+    color: var(--secondary-text);
 }
 
 .btns-container {
