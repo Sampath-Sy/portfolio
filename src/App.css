@@ -1,4 +1,7 @@
-html {
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -280,7 +283,7 @@ body {
   margin-top: 5px;
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--secondary-text);
+  color: #8491A0;
 }
 
 .contact-section {
@@ -483,40 +486,48 @@ body {
 
   .job-details p,
   .job-dates {
-   font-size: 0.9rem;
+    font-size: 0.9rem;
   }
-  .contact-section{
+
+  .contact-section {
     padding: 1.5rem 0.5rem;
     width: 100vw;
     min-width: 0;
     align-items: flex-start;
   }
-  .contact-content{
+
+  .contact-content {
     margin-left: 0;
     max-width: 98vw;
     padding: 0 0.5rem 2rem 0.5rem;
   }
-  .contact-headline{
+
+  .contact-headline {
     font-size: 1.5rem;
     text-align: left;
   }
-  .contact-summary{
+
+  .contact-summary {
     font-size: 0.9rem;
     margin: 1.2rem 0;
   }
-  .email-section,.phone-section{
+
+  .email-section,
+  .phone-section {
     flex-direction: row;
     align-items: center;
     padding: 0;
     margin-bottom: 1rem;
     gap: 0.5rem;
   }
+
   .email-section img,
   .phone-section img {
     width: 20px;
     height: 20px;
     padding: 3px;
   }
+
   .social-sections {
     flex-direction: row;
     gap: 0.7rem;
