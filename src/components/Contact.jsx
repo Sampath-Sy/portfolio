@@ -2,7 +2,7 @@ import React from "react";
 import mail from "./../assets/mail.png";
 import iphone from "./../assets/iphone.png";
 
-import { FaLinkedin, FaGithub,FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -25,16 +25,28 @@ export default function Contact() {
           <span className="phone">+91 9490922949</span>
         </div>
         <div className="social-sections">
-          <a href="https://www.linkedin.com/in/sampath-sy-" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/sampath-sy-"
+            target="_blank"
+            aria-label="LinkedIn (Opens in new tab)"
+          >
             <FaLinkedin size={32} color="#0A66C2" />
           </a>
 
-          <a href="https://github.com/Sampath-Sy" target="_blank">
-            <FaGithub size={32}  color="#FEFEFE"/>
+          <a
+            href="https://github.com/Sampath-Sy"
+            target="_blank"
+            aria-label="GitHub (Opens in new tab)"
+          >
+            <FaGithub size={32} color="#FEFEFE" />
           </a>
 
-          <a href="https://www.instagram.com/sampath_sy" target="_blank">
-            <FaInstagram size={32} color="#E4405F"/>
+          <a
+            href="https://www.instagram.com/sampath_sy"
+            target="_blank"
+            aria-label="Instagram (Opens in new tab)"
+          >
+            <FaInstagram size={32} color="#E4405F" />
           </a>
         </div>
       </div>
